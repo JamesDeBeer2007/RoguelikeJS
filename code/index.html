@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roguelike JS game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadGame()">
+    <div id="classSelect">
+        <h1>Select a class!</h1>
+        <br>
+        
+        <button type="button" id="selectClassWarrior" onclick="warriorTrue()">
+            Warrior
+        </button> 
+
+        <button id="selectClassRanger" onclick="rangerTrue()">
+            Ranger
+        </button>
+
+        <button id="selectClassMage" onclick="mageTrue()">
+            Mage
+        </button>
+        <br><br>
+
+        <p>You chose: <span id="confirmClassText">Nothing yet</span>!</p>
+        <button id="confirmClassButton" onclick="startGame()">Press to confirm your choice.</button>
+
+    </div>
+    <div id="fight">
+        
+        <h1>Level: <span id="currectLevel">1</span></h1><br>
+
+        <h2>Player Health: <span id="playerHealth">0</span></h2> 
+        <h2>Enemy Health: <span id="enemyHealth">0</span></h2><br>
+
+        <button onclick="loadStats()" id="statsButton">Player stats</button><br><br>
+        
+        <img src="../imgs/archer.jpg" alt="" id="classImg">
+        <img src="../imgs/skelletoni.jpg" alt=""><br><br>
+
+        <button id="attackMove" class="fightMove">Attack</button>
+        <button id="blockMove" class="fightMove">Block</button>
+        <button id="parryMove" class="fightMove">Parry</button>
+    </div>
+
+    <div id="inventory">
+        <h1>Inventory:</h1>
+        <button onclick="backToGame()">Back to game</button><br><br>
+        <p>Max Health: <span>test</span></p>
+        <p>Currect Health: <span>test</span></p><br>
+        <p>Damage: <span>test</span></p><br>
+        <p>Chosen class: <span id="inventoryClass">Cheater</span>!</p><br>
+    </div>
+    <script src="app.js"></script></body>
+</html>

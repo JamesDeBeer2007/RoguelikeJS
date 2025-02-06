@@ -1,0 +1,82 @@
+*
+{
+    margin: auto;
+    font-family: comic sans ms;
+}
+div
+{
+    border-style: solid;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+}
+img
+{
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+}
+
+
+/* class picker */
+#selectClassWarrior
+{
+    border-style: solid;
+    width: 150px;
+    height: 300px;
+    background-color: rgb(135, 0, 0);
+    color: white;
+    font-weight: bold;
+}
+#selectClassRanger
+{
+    border-style: solid;
+    width: 150px;
+    height: 300px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+#selectClassMage
+{
+    border-style: solid;
+    width: 150px;
+    height: 300px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+/*  */
+
+
+#confirmClassButton
+{
+    border-style: solid;
+    width: 200px;
+    height: 75px;
+}
+
+#statsButton{
+    background-color: burlywood;
+}
+
+/* attacking moves */
+.fightMove{
+    width: 150px;
+    height: 100px;
+}
+
+#attackMove
+{
+    background-color: red;
+}
+#blockMove
+{
+    background-color: blue;
+}
+#parryMove
+{
+    background-color: green;
+}
+/*   */
